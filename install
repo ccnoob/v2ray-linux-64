@@ -13,4 +13,7 @@ cp -rvf ./config.json /etc/v2ray/config.json
 cp -rvf ./systemd/v2ray.service /etc/systemd/system/
 systemctl enable v2ray.service
 
+cp -rvf ./systemd/v2ray-10809.service /etc/systemd/system/
+
 service v2ray start
+service v2ray-10809 start
