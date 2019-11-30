@@ -8,7 +8,7 @@
   "inbounds": [
     {
       "tag": "proxy",
-      "port": 10808,
+      "port": 10809,
       "listen": "127.0.0.1",
       "protocol": "socks",
       "sniffing": {
@@ -35,8 +35,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "hkt.tcpbbr.net",
-            "port": 3389,
+            "address": "jp.tcpbbr.net",
+            "port": 443,
             "users": [
               {
                 "id": "53a4b6bb-0daa-852d-cdad-ccb10599cc80",
@@ -61,7 +61,7 @@
         "kcpSettings": null,
         "wsSettings": {
           "connectionReuse": true,
-          "path": "/ghelper",
+          "path": "/jp2",
           "headers": null
         },
         "httpSettings": null,
