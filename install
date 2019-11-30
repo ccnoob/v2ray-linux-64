@@ -1,0 +1,16 @@
+#/bin/bash
+
+mkdir -p /usr/bin/v2ray
+cp -rvf ./v2ctl /usr/bin/v2ray/
+cp -rvf ./v2ray /usr/bin/v2ray/
+cp -rvf ./geoip.dat /usr/bin/v2ray/
+cp -rvf ./geosite.dat /usr/bin/v2ray/
+
+mkdir -p /etc/log/v2ray
+mkdir -p /etc/v2ray
+cp -rvf ./config.json /etc/v2ray/config.json
+
+cp -rvf ./systemd/v2ray.service /etc/systemd/system/
+systemctl enable v2ray.service
+
+service v2ray start
